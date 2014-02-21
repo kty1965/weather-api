@@ -10,7 +10,7 @@ describe WeatherAPI::Units do
 
   describe 'defaults', :vcr do
     it 'should default to metric units' do
-      response = Weather.lookup 9848
+      response = WeatherAPI.lookup 9848
 
       expect(response.units.distance).to eq 'km'
       expect(response.units.pressure).to eq 'mb'
@@ -19,7 +19,7 @@ describe WeatherAPI::Units do
     end
 
     it 'should switch to imperial if specified' do
-      response = Weather.lookup 9848, WeatherAPI::Units::FARENHEIT
+      response = WeatherAPI.lookup 9848, WeatherAPI::Units::FARENHEIT
 
       expect(response.units.distance).to eq 'mi'
       expect(response.units.pressure).to eq 'in'

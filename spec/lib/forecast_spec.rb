@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Weather::Forecast, :vcr do
-  let(:response) { Weather.lookup 9848 }
+  let(:response) { WeatherAPI.lookup 9848 }
   let(:forecast) { response.forecasts[0] }
 
   it 'should have an associated date' do
