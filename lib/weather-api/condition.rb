@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Condition
     # the weather condition code, detailed at http://developer.yahoo.com/weather
     attr_reader :code

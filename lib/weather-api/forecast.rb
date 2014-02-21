@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Forecast
     # the brief name of the day associated with the forecast
     attr_reader :day

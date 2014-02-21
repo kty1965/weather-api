@@ -1,30 +1,30 @@
-module Weather
+module WeatherAPI
   class Response
-    # a Weather::Astronomy object containing sunrise and sunset
+    # a WeatherAPI::Astronomy object containing sunrise and sunset
     # information for the requested location
     attr_reader :astronomy
 
-    # a Weather::Location object containing the geographical
+    # a WeatherAPI::Location object containing the geographical
     # names of the requested location
     attr_reader :location
 
-    # a Weather::Units object containig the units corresponding
+    # a WeatherAPI::Units object containig the units corresponding
     # to the information contained in the response
     attr_reader :units
 
-    # a Weather::Wind object containing the wind information
+    # a WeatherAPI::Wind object containing the wind information
     # for the requested location
     attr_reader :wind
 
-    # a Weather::Atmosphere object containing the atmosphere
+    # a WeatherAPI::Atmosphere object containing the atmosphere
     # information for the requested location
     attr_reader :atmosphere
 
-    # a Weather::Condition object detailing the current
+    # a WeatherAPI::Condition object detailing the current
     # conditions of the requested location
     attr_reader :condition
 
-    # a collection of Weather::Forecast objects containing
+    # a collection of WeatherAPI::Forecast objects containing
     # high-level forecasted weather for upcoming days
     attr_reader :forecasts
 
@@ -32,7 +32,7 @@ module Weather
     # the requested location
     attr_reader :description
 
-    # a Weather::Image object containing an image icon
+    # a WeatherAPI::Image object containing an image icon
     # representing the current weather for the requested location
     attr_reader :image
 

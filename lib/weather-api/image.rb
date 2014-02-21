@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Image
     # the full URL to the image
     attr_reader :url

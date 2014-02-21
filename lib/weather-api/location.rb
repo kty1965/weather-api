@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Location
     # the name of the city
     attr_reader :city
