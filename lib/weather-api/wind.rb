@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Wind
     # the temperature, with wind chill factored in
     attr_reader :chill

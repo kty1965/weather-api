@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Units
     FARENHEIT = 'f'
     CELSIUS   = 'c'

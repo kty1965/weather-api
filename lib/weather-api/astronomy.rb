@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Astronomy
     # a Time object containing the sunrise time for a location
     attr_reader :sunrise

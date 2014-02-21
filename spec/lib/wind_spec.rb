@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Weather::Wind, :vcr do
+describe WeatherAPI::Wind, :vcr do
   let(:response) { Weather.lookup 9848 }
   let(:wind) { response.wind }
 

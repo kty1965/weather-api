@@ -1,6 +1,6 @@
 require 'chronic'
 
-module Weather
+module WeatherAPI
   class Utils
 
     # Attempts to convert passed text into a Time object

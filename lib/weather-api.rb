@@ -14,7 +14,7 @@ require 'weather-api/utils'
 require 'weather-api/version'
 require 'weather-api/wind'
 
-module Weather
+module WeatherAPI
   class << self
     # Yahoo! Weather info endpoint
     ROOT = "http://query.yahooapis.com/v1/public/yql"
@@ -30,10 +30,10 @@ module Weather
     #        'c' - Celsius/Metric measurements
     #        'f' - Farenheit/Imperial measurements.
     #
-    #        To make this easier, you can use the Weather::Units::FARENHEIT and
-    #        Weather::Units::CELSIUS constants. Defaults to Celsius
+    #        To make this easier, you can use the WeatherAPI::Units::FARENHEIT and
+    #        WeatherAPI::Units::CELSIUS constants. Defaults to Celsius
     #
-    # Returns a Weather::Response object containing forecast
+    # Returns a WeatherAPI::Response object containing forecast
     def lookup(woeid, unit = Units::CELSIUS)
       acceptable_units = [Units::CELSIUS, Units::FARENHEIT]
       unit = Units::CELSIUS unless acceptable_units.include?(unit)

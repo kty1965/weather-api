@@ -1,4 +1,4 @@
-module Weather
+module WeatherAPI
   class Atmosphere
     class Barometer
       STEADY  = 'steady'
@@ -19,7 +19,7 @@ module Weather
     attr_reader :pressure
 
     # barometer state, defined as one of the contants
-    # in Weather::Atmosphere::Barometer
+    # in WeatherAPI::Atmosphere::Barometer
     attr_reader :barometer
 
     def initialize(payload)

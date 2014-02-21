@@ -1,3 +1,3 @@
-module Weather
-  VERSION = "1.1.1" unless defined?(Weather::VERSION)
+module WeatherAPI
+  VERSION = "1.1.1" unless defined?(WeatherAPI::VERSION)
 end
