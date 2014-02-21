@@ -3,7 +3,7 @@ require File.expand_path '../lib/weather-api/version', __FILE__
 
 Gem::Specification.new do |spec|
   spec.name          = "weather-api"
-  spec.version       = Weather::VERSION
+  spec.version       = WeatherAPI::VERSION
   spec.authors       = ["Andrew Stewart"]
   spec.email         = ["andrew@stwrt.com"]
   spec.description   = %q{A wrapper for the Yahoo! Weather XML RSS feed}
