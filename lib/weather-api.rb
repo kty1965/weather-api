@@ -1,6 +1,7 @@
-require 'net/http'
 require 'json'
 require 'map'
+require 'rest-client'
+require 'ap'
 
 require 'weather-api/astronomy'
 require 'weather-api/atmosphere'
@@ -48,7 +49,7 @@ module WeatherAPI
     private
     def get_response url
       begin
-        response = Net::HTTP.get_response(URI.parse url).body.to_s
+        response = RestClient.get(url).body.to_s
       rescue => e
         raise "Failed to get weather [url=#{url}, e=#{e}]."
       end
